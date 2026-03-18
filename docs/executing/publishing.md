@@ -59,8 +59,8 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/hejijunhao/photon"
-Issues = "https://github.com/hejijunhao/photon/issues"
+Repository = "https://github.com/kaminocorp/photon"
+Issues = "https://github.com/kaminocorp/photon/issues"
 
 [tool.maturin]
 bindings = "bin"
@@ -183,7 +183,7 @@ npm/
   "version": "0.1.0",
   "description": "Fast image processing CLI with AI-powered tagging and embeddings",
   "license": "MIT OR Apache-2.0",
-  "repository": "https://github.com/hejijunhao/photon",
+  "repository": "https://github.com/kaminocorp/photon",
   "bin": {
     "photon": "bin/photon"
   },

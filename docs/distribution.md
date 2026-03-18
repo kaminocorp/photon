@@ -79,7 +79,7 @@ Each build compiles with `cargo build --release --target <triple>`, then package
 For Rust developers:
 
 ```bash
-git clone https://github.com/hejijunhao/photon
+git clone https://github.com/kaminocorp/photon
 cd photon
 cargo build --release
 # Binary at target/release/photon

@@ -6,6 +6,7 @@ All notable changes to Photon are documented here.
 
 ## Index
 
+- **[0.7.11](#0711---2026-03-19)** — Repo migration: `hejijunhao/photon` → `kaminocorp/photon` — transferred to Kamino Corp org, updated all hardcoded URLs, PyPI trusted publisher reconfigured
 - **[0.7.10](#0710---2026-02-15)** — CI fix: `manylinux_2_38` → `manylinux_2_39` — `ort` prebuilt ONNX Runtime links `CXXABI_1.3.15` (GCC 14), which exceeds `manylinux_2_38` baseline (GCC 13)
 - **[0.7.9](#079---2026-02-15)** — CI fix: split Linux PyPI builds into separate job — install maturin via pip and run directly with `--compatibility manylinux_2_38`, bypassing maturin-action's conflicting `--manylinux off` flag
 - **[0.7.8](#078---2026-02-15)** — CI fix (failed): added `--compatibility manylinux_2_38` to maturin args for Linux wheels — but maturin-action also passes `--manylinux off`, and since `--manylinux`/`--compatibility` are aliases, maturin rejects the duplicate: `Expected only one platform tag but found 2`. Also aligned pyproject.toml version with Cargo workspace version
@@ -56,6 +57,30 @@ All notable changes to Photon are documented here.
 - **[0.3.0](#030---2026-02-09)** — SigLIP embedding: ONNX Runtime integration, 768-dim vector generation
 - **[0.2.0](#020---2026-02-09)** — Image processing pipeline: decode, EXIF, hashing, thumbnails
 - **[0.1.0](#010---2026-02-09)** — Project foundation: CLI, configuration, logging, error handling
+
+---
+
+## [0.7.11] - 2026-03-19
+
+### Summary
+
+Repository migration — moved from `hejijunhao/photon` (personal account) to `kaminocorp/photon` (Kamino Corp organization). All hardcoded GitHub URLs updated across the codebase. PyPI trusted publisher for `photon-imager` reconfigured with the new org. No code changes — metadata and docs only.
+
+### Changed
+
+- **Repository owner `hejijunhao` → `kaminocorp`** — updated all GitHub URLs in `Cargo.toml`, `pyproject.toml`, `README.md`, and 6 docs files.
+- **PyPI trusted publisher** — added `kaminocorp/photon` as trusted publisher for `photon-imager` (workflow: `pypi.yml`, environment: `pypi`).
+- **Local git remote** — `origin` updated to `https://github.com/kaminocorp/photon.git`.
+
+### Not Changed
+
+- **No code changes** — all Rust source, tests, CI workflows, and build configuration unchanged.
+- **GitHub redirects** — existing clones pointing at `hejijunhao/photon` continue to work via GitHub's automatic redirect.
+- **PyPI package** — `photon-imager` identity, version, and all published wheels unchanged.
+
+### Tests
+
+226 tests passing (40 CLI + 166 core + 20 integration), zero clippy warnings, zero formatting violations. No code changes.
 
 ---
 
@@ -1401,11 +1426,11 @@ crates/
 
 ---
 
-[0.4.1]: https://github.com/hejijunhao/photon/compare/v0.4.0...v0.4.1
-[0.4.0]: https://github.com/hejijunhao/photon/compare/v0.3.3...v0.4.0
-[0.3.3]: https://github.com/hejijunhao/photon/compare/v0.3.2...v0.3.3
-[0.3.2]: https://github.com/hejijunhao/photon/compare/v0.3.1...v0.3.2
-[0.3.1]: https://github.com/hejijunhao/photon/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/hejijunhao/photon/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/hejijunhao/photon/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/hejijunhao/photon/releases/tag/v0.1.0
+[0.4.1]: https://github.com/kaminocorp/photon/compare/v0.4.0...v0.4.1
+[0.4.0]: https://github.com/kaminocorp/photon/compare/v0.3.3...v0.4.0
+[0.3.3]: https://github.com/kaminocorp/photon/compare/v0.3.2...v0.3.3
+[0.3.2]: https://github.com/kaminocorp/photon/compare/v0.3.1...v0.3.2
+[0.3.1]: https://github.com/kaminocorp/photon/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/kaminocorp/photon/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/kaminocorp/photon/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/kaminocorp/photon/releases/tag/v0.1.0

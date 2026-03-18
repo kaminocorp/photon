@@ -86,7 +86,7 @@ photon 0.1.0
 
 ## Before First Publish
 
-1. **Configure trusted publishing on PyPI**: Go to pypi.org → project settings → "Publishing" → add GitHub Actions as a trusted publisher (repo: `hejijunhao/photon`, workflow: `pypi.yml`, environment: `pypi`)
+1. **Configure trusted publishing on PyPI**: Go to pypi.org → project settings → "Publishing" → add GitHub Actions as a trusted publisher (repo: `kaminocorp/photon`, workflow: `pypi.yml`, environment: `pypi`)
 2. **Create the `pypi` environment** in GitHub repo settings → Environments
 3. **Tag a release**: `git tag v0.1.0 && git push --tags` — this triggers both `release.yml` (GitHub Release) and `pypi.yml` (PyPI upload)
 4. **Verify**: `pip install photon-imager && photon --version`

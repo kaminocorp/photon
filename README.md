@@ -61,7 +61,7 @@ Available for macOS (Apple Silicon) and Linux (x86_64, aarch64).
 ### Build from source
 
 ```bash
-git clone https://github.com/hejijunhao/photon.git
+git clone https://github.com/kaminocorp/photon.git
 cd photon
 cargo build --release
 
@@ -266,7 +266,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-photon-core = { git = "https://github.com/hejijunhao/photon.git" }
+photon-core = { git = "https://github.com/kaminocorp/photon.git" }
 tokio = { version = "1", features = ["full"] }
 ```
 

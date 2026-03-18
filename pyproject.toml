@@ -22,8 +22,8 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/hejijunhao/photon"
-Issues = "https://github.com/hejijunhao/photon/issues"
+Repository = "https://github.com/kaminocorp/photon"
+Issues = "https://github.com/kaminocorp/photon/issues"
 
 [tool.maturin]
 bindings = "bin"

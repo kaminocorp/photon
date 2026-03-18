@@ -1,4 +1,4 @@
-# GitHub Migration Plan: `hejijunhao/photon` → `kaminocorp/photon`
+# GitHub Migration Plan: `kaminocorp/photon` → `kaminocorp/photon`
 
 Move the Photon repository from the personal account to the Kamino Corp organization.
 
@@ -23,12 +23,12 @@ Move the Photon repository from the personal account to the Kamino Corp organiza
 
 ### 3. Transfer the repository
 
-1. Go to https://github.com/hejijunhao/photon/settings
+1. Go to https://github.com/kaminocorp/photon/settings
 2. Scroll to **Danger Zone** → **Transfer repository**
 3. Select `kaminocorp` as the new owner
 4. Confirm the transfer
 
-> GitHub automatically sets up redirects from `hejijunhao/photon` → `kaminocorp/photon` for all git operations and web URLs. Existing clones continue to work.
+> GitHub automatically sets up redirects from `kaminocorp/photon` → `kaminocorp/photon` for all git operations and web URLs. Existing clones continue to work.
 
 ---
 
@@ -39,7 +39,7 @@ Move the Photon repository from the personal account to the Kamino Corp organiza
 The OIDC trusted publisher is bound to the old repo path. Without this, the next tagged release will fail to publish to PyPI.
 
 1. Go to https://pypi.org/manage/project/photon-imager/settings/publishing/
-2. Remove the old publisher (`hejijunhao/photon`)
+2. Remove the old publisher (`kaminocorp/photon`)
 3. Add a new trusted publisher:
    - **Owner:** `kaminocorp`
    - **Repository:** `photon`
@@ -48,7 +48,7 @@ The OIDC trusted publisher is bound to the old repo path. Without this, the next
 
 ### 5. Update hardcoded URLs in the codebase
 
-These files reference `hejijunhao/photon` and need updating to `kaminocorp/photon`:
+These files reference `kaminocorp/photon` and need updating to `kaminocorp/photon`:
 
 | File | Line(s) | What |
 |---|---|---|

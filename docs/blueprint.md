@@ -548,7 +548,7 @@ Pre-built wheels for macOS (Apple Silicon) and Linux (x86_64, aarch64). Python 3
 ### From Source
 
 ```bash
-git clone https://github.com/hejijunhao/photon
+git clone https://github.com/kaminocorp/photon
 cd photon
 cargo build --release
 # Binary at target/release/photon

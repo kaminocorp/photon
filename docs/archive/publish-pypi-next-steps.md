@@ -17,7 +17,7 @@ Go to **pypi.org → your account → Publishing** (or create the `photon-imager
 | Field | Value |
 |-------|-------|
 | PyPI project name | `photon-imager` |
-| Owner | `hejijunhao` |
+| Owner | `kaminocorp` |
 | Repository | `photon` |
 | Workflow name | `pypi.yml` |
 | Environment name | `pypi` |
