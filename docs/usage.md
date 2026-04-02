@@ -112,6 +112,7 @@ cargo run -- models path       # Show model directory
 cargo run -- config show       # Display current config
 cargo run -- config path       # Show config file location
 cargo run -- config init       # Create default config file
+cargo run -- config init --force  # Overwrite existing config file
 ```
 
 Config file location is platform-specific (e.g. `~/.config/photon/config.toml` on Linux). Settings can be overridden by CLI flags.
